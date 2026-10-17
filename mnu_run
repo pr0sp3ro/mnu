@@ -1,0 +1,2 @@
+#!/bin/sh
+mnu_path | mnu "$@" | ${SHELL:-"/bin/sh"} &

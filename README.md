@@ -1,6 +1,6 @@
-# dmenu-enhanced
+# mnu
 
-dmenu-enhanced is a small keyboard-driven menu for X11, based on dmenu 5.2.
+mnu is a small keyboard-driven menu for X11, based on dmenu 5.2.
 It reads newline-separated items from standard input and prints the selected
 item to standard output.
 
@@ -49,10 +49,10 @@ items use the normal highlight foreground.
 ## Usage
 
 ```sh
-printf '%s\n' Firefox Terminal Files | dmenu -i -l 10 -p 'Open:'
-printf '%s\n' Firefox Chromium | dmenu -hp Firefox -hb '#333333'
-dmenu -p 'Task:' </dev/null
-dmenu -P -p 'Password:'
+printf '%s\n' Firefox Terminal Files | mnu -i -l 10 -p 'Open:'
+printf '%s\n' Firefox Chromium | mnu -hp Firefox -hb '#333333'
+mnu -p 'Task:' </dev/null
+mnu -P -p 'Password:'
 ```
 
 - Enter prints the selected item, or the input when there is no selection.
@@ -77,9 +77,9 @@ Use -l 0 for a horizontal menu or -l with a positive number for a vertical list.
 Monitor numbers for -m start at zero. The default, -1, selects automatically.
 Invalid numeric arguments are rejected.
 
-The included dmenu_run script launches shell commands. dmenu_path lists
+The included mnu_run script launches shell commands. mnu_path lists
 executables from PATH and caches the result. stest filters file lists.
-See man dmenu and man stest for more options and keyboard shortcuts.
+See man mnu and man stest for more options and keyboard shortcuts.
 
 ## Credits and license
 

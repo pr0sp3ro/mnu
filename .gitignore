@@ -1,8 +1,10 @@
-dmenu
+mnu
 drw.o
 stest
 stest.o
 util.o
-dmenu.o
+mnu.o
 *.orig
 *.rej
+dmenu
+dmenu.o

@@ -1,4 +1,4 @@
-# dmenu version
+# mnu version
 VERSION = 5.2
 
 # paths
