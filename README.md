@@ -1,6 +1,8 @@
 # mnu
 
-mnu is a small keyboard-driven menu for X11, based on dmenu 5.2.
+mnu is a small keyboard-driven menu for X11, based on dmenu 5.4
+with upstream updates through commit
+[8627d0c659f5](https://git.suckless.org/dmenu/commit/8627d0c659f5bb79ba29edd0e7264fb7549e6fac.html).
 It reads newline-separated items from standard input and prints the selected
 item to standard output.
 
@@ -69,6 +71,8 @@ prefixes, and substring matches. Use -i for case-insensitive matching.
 The -hp option accepts comma-separated complete item names. It preserves input
 order when the search is empty and cannot represent names containing commas.
 Use -hf and -hb to change high priority foreground and background colors.
+Use -of and -ob to set the foreground and background of previously output items
+when selecting multiple items with Ctrl-Enter.
 
 Password mode ignores standard input and displays one dot per UTF-8 code point.
 The accepted password is printed to standard output.
