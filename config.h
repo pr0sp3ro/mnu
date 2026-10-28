@@ -11,13 +11,13 @@ static const char *prompt                = NULL; /* -p  option; prompt to the le
 static const char *colors[SchemeLast][2] = {
 	/* Highlight backgrounds are inherited from the item state. */
 	/*                         fg         bg       */
-	[SchemeNorm]          = { "#bbbbbb", "#222222" },
-	[SchemeSel]           = { "#eeeeee", "#005577" },
-	[SchemeSelHighlight]  = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
-	[SchemeOut]           = { "#000000", "#00ffff" },
-	[SchemeOutHighlight]  = { "#ffc978", "#00ffff" },
-	[SchemeHp]            = { "#bbbbbb", "#222222" }
+	[SchemeNorm]          = { "#d8d8d8", "#101010" },
+	[SchemeSel]           = { "#d8d8d8", "#34302d" },
+	[SchemeSelHighlight]  = { "#ffc799", "#34302d" },
+	[SchemeNormHighlight] = { "#ffc799", "#101010" },
+	[SchemeOut]           = { "#90b99f", "#101010" },
+	[SchemeOutHighlight]  = { "#ffc799", "#101010" },
+	[SchemeHp]            = { "#d8d8d8", "#101010" }
 };
 /* -l option; if nonzero, mnu uses vertical list with given number of lines */
 static unsigned int lines = 0;
